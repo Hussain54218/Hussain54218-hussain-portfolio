@@ -7,6 +7,7 @@ function Skills() {
 
   useEffect(() => {
     fetch("http://localhost:5000/api/skills")
+    
       .then((res) => res.json())
       .then((data) => setSkills(data))
       .catch((err) => console.error(err));
